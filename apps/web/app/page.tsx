@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@repo/ui/button";
+import { AppButton } from "@repo/ui";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>app/page.tsx</code>
+            Web <code>app/page.tsx</code>
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
@@ -46,9 +46,9 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
+        <AppButton appName="web">
           Open alert
-        </Button>
+        </AppButton>
       </main>
       <footer className={styles.footer}>
         <a

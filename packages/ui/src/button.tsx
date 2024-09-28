@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import Button from '@mui/material/Button';
 
 interface ButtonProps {
   children: ReactNode;
@@ -8,13 +9,13 @@ interface ButtonProps {
   appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const AppButton = ({ children, className, appName }: ButtonProps) => {
   return (
-    <button
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
+    <Button
+      variant="contained"
+      onClick={() => alert(`Hy from your ${appName} app!`)}
     >
       {children}
-    </button>
+    </Button>
   );
 };
